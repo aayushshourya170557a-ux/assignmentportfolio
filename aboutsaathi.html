@@ -11,12 +11,12 @@
             box-sizing: border-box;
         }
 
-           body {
+        body {
             font-family: "Comic Sans MS";
             background-color: #e5e5e5;
             color: #222;
             display: flex;
-            flex-direction: column; 
+            flex-direction: column; /* Stacks the card and footer vertically */
             justify-content: center;
             align-items: center;
             min-height: 100vh;
@@ -25,9 +25,9 @@
             background-position: center;
             background-repeat: no-repeat;
             padding: 20px;
-            }
+        }
 
-        .about {
+        .about-card {
             width: 100%;
             max-width: 420px;
             background-color: #ffffff;
@@ -37,7 +37,7 @@
             flex-direction: column;
         }
 
-       
+        /* Top Section (Image and Title) */
         .top-section {
             background-color: #b2eafb;
             padding: 30px 30px 0 30px;
@@ -47,10 +47,10 @@
         }
 
         .about-title {
-             align-self: flex-start;
-              font-size: 14px;
-             font-weight: 700;
-            
+            align-self: flex-start;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
             color: #111;
             margin-bottom: 25px;
         }
@@ -71,16 +71,16 @@
             display: block;
         }
 
-       
+        /* Bottom Section (Yellow Card Content) */
         .bottom-section {
             background-color: #ffd400;
-             padding: 35px;
-             display: flex;
+            padding: 35px 30px;
+            display: flex;
             flex-direction: column;
             gap: 20px;
         }
 
-          .greeting {
+        .greeting {
             font-size: 22px;
             font-weight: 800;
             color: #111;
@@ -94,19 +94,19 @@
             font-weight: 400;
         }
 
-       strong {
+        .bio-text strong {
             font-weight: 700;
         }
 
-        
+        /* Footer / Button Styling */
         footer {
-            margin-top: 20px; 
-             width: 100%;
+            margin-top: 20px; /* Adds space between the card and the button */
+            width: 100%;
             display: flex;
             justify-content: center;
         }
 
-        button {
+        .nextbutton button {
             padding: 10px 20px;
             background-color: #e5d78f;
             border: 2px solid #111;
@@ -116,7 +116,7 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
 
-         a{
+        .nextbutton button a {
             text-decoration: none;
             
             font-size: 14px;
@@ -127,41 +127,42 @@
 </head>
 <body>
 
-    <div class="about">
-       
+    <div class="about-card">
+        <!-- Top Section -->
         <div class="top-section">
-            <h2 class="about-title">About Me!</h2>
+            <h2 class="about-title">My Latest Project!</h2>
             <div class="image-container">
-               
-                <img src="Aayush.jpeg" alt="Profile Portrait">
+                <!-- Replace the src attribute with your photo link -->
+                <img src="saathi-background.jpeg" alt="saathi app">
             </div>
         </div>
 
-        
+        <!-- Bottom Yellow Section -->
         <div class="bottom-section">
-            <h1 class="greeting">Hello!</h1>
+            <h1 class="greeting">SAATHI - COMPANION FOR THE ELDERS</h1>
             <p class="bio-text">
-                <strong>I am AAYUSH SHOURYA ,</strong><br>
-                Born in Ranchi and raised in Patna, Bihar, my early years laid a strong foundation before my path took me to Kota for rigorous JEE preparation. Though that specific chapter didn't unfold as planned, it built my resilience and redirected my ambitions toward a dynamic, tech-driven future in computer science.
+                <strong>Purpose and Mission</strong><br>
+                
+Saathi is designed as an accessible digital companion to bridge social connection, everyday support, and personal engagement. Rooted in its name meaning "companion," its primary purpose is to simplify daily interactions and provide users with an intuitive, reliable digital platform that fosters meaningful assistance and connectivity in one place.
             </p>
             <p class="bio-text">
-                Now navigating my first year as a student at the Scaler School of Technology in Bengaluru, I am diving deep into the tech world. With an entrepreneurial eye on launching my own startup down the line, my primary focus is mastering core fundamentals across programming and modern development.
+               Problems It Desires to Solve
+The platform addresses modern digital isolation, fragmented navigation, and overwhelming user interfaces. By eliminating steep learning curves and impersonal experiences, Saathi solves accessibility hurdles, ensuring people can effortlessly connect, find necessary everyday support, navigate essential services, and engage with an approachable, reliable digital ally tailored to their real-life routines.
+
+
             </p>
             <p class="bio-text">
-                Beyond coding, my creative side shines through a growing passion for graphic design. I actively explore design principles in my free time, with exciting plans to channel my skills into freelancing and bring a sharp aesthetic edge to my upcoming digital projects.
+               Techniques and Stack Overview
+From a high-level view, Saathi was brought to life using structured web development fundamentals—crafting clean HTML semantic architecture, responsive CSS styling, and dynamic JavaScript behaviors. On the promotional side, we integrated custom motion graphics, celebratory screen animations, cohesive branding assets, and optimized visual storytelling to highlight the homepage experience.
             </p>
         </div>
     </div>
 
     <footer>
         <div class="nextbutton">
-            <button><a href="aboutsaathi.html">Next Page</a></button>
+            <button><a href="aboutme.html">Previous Page</a></button>
         </div>
     </footer>
-     <footer>
-        <div class="nextbutton">
-            <button><a href="index.html">Previous Page</a></button>
-        </div>
-    </footer>
+
 </body>
 </html>
